@@ -1,0 +1,220 @@
+<html>
+<head>
+    <style>
+        .topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the "active" element to highlight the current page */
+  .topnav a.active {
+    background-color: #2196F3;
+    color: white;
+  }
+
+  /* Style the search box inside the navigation bar */
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  .topnav input[type=button] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+
+  
+  img {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 100px; /* Set a small width */
+    float: left;
+  }
+  
+  /* Add a hover effect (blue shadow) */
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+  .service {
+    overflow: hidden;
+    border: 2px solid #ddd; /* Gray border */
+
+  }
+ 
+
+  /* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+  
+    </style>
+</head>
+<body>
+
+
+<div class="topnav">
+    <a class="active" href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+   
+    <input placeholder="Search here....." type="text" id="search1">
+    <input type="button" value="Go" onclick="search(document.getElementById('search1').value)">
+
+
+
+</div>
+
+<div class="service">
+    <a target="_blank" href="#">
+        <img src="#">
+      </a>
+      <p>
+        <div class="tooltip" onclick="myFunction()"> Web Developement............
+          <span class="tooltiptext" id="mytooltip">*****@gmail.com <br> contact- 2034******</span>
+        </div>
+      </p>
+</div>
+<br>
+<br>
+<div class="service">
+    <a target="_blank" href="#">
+        <img src="#">
+      </a>
+      <p>
+        <div class="tooltip" onclick="myFunction1()">Mobile Applications............
+            <span class="tooltiptext" id="mytooltip1">*****@gmail.com <br> contact- 9786******</span>
+        </div>
+      </p>
+</div>
+<br>
+<br>
+<div class="service">
+    <a target="_blank" href="#">
+        <img src="#">
+      </a>
+      <p>
+        <div class="tooltip" onclick="myFunction2()">Console Applications............
+            <span class="tooltiptext" id="mytooltip2">*****@gmail.com <br> contact- 8786******</span>
+          </div>
+         
+      </p>
+</div>
+<br>
+<br>
+<div class="service">
+    <a target="_blank" href="#">
+        <img src="#">
+      </a>
+      <p>
+        <div class="tooltip" onclick="myFunction3()">Cloud Computing............
+            <span class="tooltiptext" id="mytooltip3">*****@gmail.com <br> contact- 8886******</span>
+          </div>
+         
+      </p>
+</div>
+<br>
+<br>
+<div class="service">
+    <a target="_blank" href="#">
+        <img src="#">
+      </a>
+      <p>
+        <div class="tooltip" onclick="myFunction4()">Cyber Security............
+            <span class="tooltiptext" id="mytooltip4">*****@gmail.com <br> contact- 7786******</span>
+          </div>
+         
+      </p>
+</div>
+
+
+<script>
+    // When the user clicks on div, open the tooltip
+      function myFunction() 
+      {
+      var tooltip = document.getElementById("mytooltip");
+      tooltip.classList.toggle("show");
+      }
+  
+      function myFunction1()
+      {
+      var tooltip1 = document.getElementById("mytooltip1");
+      tooltip1.classList.toggle("show");
+      }
+
+      function myFunction2()
+      {
+      var tooltip2 = document.getElementById("mytooltip2");
+      tooltip2.classList.toggle("show");
+      }
+
+      function myFunction3()
+      {
+      var tooltip3 = document.getElementById("mytooltip3");
+      tooltip3.classList.toggle("show");
+      }
+
+      function myFunction4()
+      {
+      var tooltip4 = document.getElementById("mytooltip4");
+      tooltip4.classList.toggle("show");
+      }
+
+      function search(string){
+         window.find(string);
+      }
+      
+      </script>
+
+
+
+</body>
+
+</html>
