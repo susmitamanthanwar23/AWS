@@ -1,0 +1,125 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="form1.css"/>
+</head>
+<body>
+
+
+<div class="topnav">
+    <a class="active" href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+   
+    <input placeholder="Search here....." type="text" id="search1">
+    <input type="button" value="Go" onclick="search(document.getElementById('search1').value)">
+
+
+
+</div>
+
+<div class="service">
+    <a target="_blank" href="#">
+        <img src="#">
+      </a>
+      <p>
+        <div class="popup" onclick="myFunction()"> Web Developement............
+          <span class="popuptext" id="myPopup">*****@gmail.com <br> contact- 2034******</span>
+        </div>
+      </p>
+</div>
+<br>
+<br>
+<div class="service">
+    <a target="_blank" href="#">
+        <img src="#">
+      </a>
+      <p>
+        <div class="popup" onclick="myFunction1()">Mobile Applications............
+            <span class="popuptext" id="myPopup1">*****@gmail.com <br> contact- 9786******</span>
+        </div>
+      </p>
+</div>
+<br>
+<br>
+<div class="service">
+    <a target="_blank" href="#">
+        <img src="#">
+      </a>
+      <p>
+        <div class="popup" onclick="myFunction2()">Console Applications............
+            <span class="popuptext" id="myPopup2">*****@gmail.com <br> contact- 8786******</span>
+          </div>
+         
+      </p>
+</div>
+<br>
+<br>
+<div class="service">
+    <a target="_blank" href="#">
+        <img src="#">
+      </a>
+      <p>
+        <div class="popup" onclick="myFunction3()">Cloud Computing............
+            <span class="popuptext" id="myPopup3">*****@gmail.com <br> contact- 8886******</span>
+          </div>
+         
+      </p>
+</div>
+<br>
+<br>
+<div class="service">
+    <a target="_blank" href="#">
+        <img src="#">
+      </a>
+      <p>
+        <div class="popup" onclick="myFunction4()">Cyber Security............
+            <span class="popuptext" id="myPopup4">*****@gmail.com <br> contact- 7786******</span>
+          </div>
+         
+      </p>
+</div>
+
+
+<script>
+    // When the user clicks on div, open the popup
+      function myFunction() 
+      {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+      }
+  
+      function myFunction1()
+      {
+      var popup1 = document.getElementById("myPopup1");
+      popup1.classList.toggle("show");
+      }
+
+      function myFunction2()
+      {
+      var popup2 = document.getElementById("myPopup2");
+      popup2.classList.toggle("show");
+      }
+
+      function myFunction3()
+      {
+      var popup3 = document.getElementById("myPopup3");
+      popup3.classList.toggle("show");
+      }
+
+      function myFunction4()
+      {
+      var popup4 = document.getElementById("myPopup4");
+      popup4.classList.toggle("show");
+      }
+
+      function search(string){
+         window.find(string);
+      }
+      
+      </script>
+
+
+
+</body>
+
+</html>
